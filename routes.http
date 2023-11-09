@@ -32,8 +32,12 @@ Content-Type: application/json
 
 ### Deletar um vídeo
 
-DELETE http://localhost:3000/videos/5f9b0b5b9b0b3b1b9b0b3b1b
+DELETE http://localhost:3000/videos/0a8dae3e-041e-40f3-aee0-abf15911348c
 
 ### Inativar um vídeo
 
-PUT http://localhost:3000/videos/5f9b0b5b9b0b3b1b9b0b3b1b/inactivate
+PUT http://localhost:3000/videos/0a8dae3e-041e-40f3-aee0-abf15911348c/inactivate
+
+### Ativar um vídeo
+
+PUT http://localhost:3000/videos/0a8dae3e-041e-40f3-aee0-abf15911348c/activate

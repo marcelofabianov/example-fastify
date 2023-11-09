@@ -44,4 +44,16 @@ server.delete('/videos/:id', async (request, reply) => {
     return reply.send(body.ok({}))
 })
 
+server.put('/videos/:id/activate', async (request, reply) => {
+    const video = await database.activateVideo(request.params.id)
+
+    return reply.send(body.ok(video))
+})
+
+server.put('/videos/:id/inactivate', async (request, reply) => {
+    const video = await database.inactivateVideo(request.params.id)
+
+    return reply.send(body.ok(video))
+})
+
 server.listen({ port: 3000 })
