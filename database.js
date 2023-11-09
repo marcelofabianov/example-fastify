@@ -3,11 +3,11 @@ import { randomUUID } from 'node:crypto'
 
 export class Database {
 
-    async getVideos(filters = {}) {
+    async getVideos() {
         const videos = await sql`
-            SELECT *
+            SELECT id, title, description, url, createdat, updatedat, inactivatedat
             FROM videos
-            WHERE deletedat IS NULL OR ${filters.inactivated === 'true'}
+            WHERE deletedat IS NULL
         `
 
         return videos
@@ -15,7 +15,7 @@ export class Database {
 
     async getVideo(id) {
         const videos = await sql`
-            SELECT *
+            SELECT id, title, description, url, createdat, updatedat, inactivatedat
             FROM videos
             WHERE id = ${id} AND deletedat IS NULL
         `
