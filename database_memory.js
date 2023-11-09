@@ -1,10 +1,16 @@
 import { randomUUID } from 'node:crypto'
 
-export class DatabaseMemory {
+export class Database {
     #videos = new Map()
 
-    async getVideos() {
-        return Array.from(this.#videos.values())
+    async getVideos(filters = {}) {
+        const videos = Array.from(this.#videos.values())
+
+        if (filters.inactivated === 'true') {
+            return videos
+        }
+
+        return videos.filter(video => !video.inactivatedAt)
     }
 
     async getVideo(id) {

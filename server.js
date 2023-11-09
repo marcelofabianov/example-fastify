@@ -1,10 +1,10 @@
 import { fastify } from 'fastify'
-import { DatabaseMemory } from './database_memory.js'
 import { JsonResponse } from './json_response.js'
+import { Database } from './database.js'
 
 const server = fastify()
-const database = new DatabaseMemory()
 const body = new JsonResponse()
+const database = new Database()
 
 server.get('/', async (request, reply) => {
     return reply.send({})

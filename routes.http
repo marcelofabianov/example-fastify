@@ -6,8 +6,8 @@ POST http://localhost:3000/videos
 Content-Type: application/json
 
 {
-    "title": "Meu vídeo",
-    "description": "Descrição do meu vídeo",
+    "title": "Meu vídeo 2",
+    "description": "Descrição do meu vídeo 2",
     "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }
 
@@ -17,27 +17,27 @@ GET http://localhost:3000/videos
 
 ### Listar um vídeo específico 
 
-GET http://localhost:3000/videos/eb5e011d-f30c-404d-a2cc-4b30663d01a7
+GET http://localhost:3000/videos/fe87d5a9-86c3-4f47-abd2-1a27d24d6d2f
 
 ### Atualizar um vídeo 
 
-PUT http://localhost:3000/videos/c8b89a52-f9c6-4bda-b8de-48802ee16758
+PUT http://localhost:3000/videos/fe87d5a9-86c3-4f47-abd2-1a27d24d6d2f
 Content-Type: application/json
 
 {
-    "title": "Meu vídeo atualizado",
-    "description": "Descrição do meu vídeo atualizado",
+    "title": "Meu vídeo 2 atualizado",
+    "description": "Descrição do meu vídeo 2 atualizado",
     "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }
 
 ### Deletar um vídeo
 
-DELETE http://localhost:3000/videos/0a8dae3e-041e-40f3-aee0-abf15911348c
+DELETE http://localhost:3000/videos/fe87d5a9-86c3-4f47-abd2-1a27d24d6d2f
 
 ### Inativar um vídeo
 
-PUT http://localhost:3000/videos/0a8dae3e-041e-40f3-aee0-abf15911348c/inactivate
+PUT http://localhost:3000/videos/1370eb08-b487-4287-8fd0-488598b81fbf/inactivate
 
 ### Ativar um vídeo
 
-PUT http://localhost:3000/videos/0a8dae3e-041e-40f3-aee0-abf15911348c/activate
+PUT http://localhost:3000/videos/1370eb08-b487-4287-8fd0-488598b81fbf/activate

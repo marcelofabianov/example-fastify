@@ -17,3 +17,6 @@ System Volume Information/
 
 # Linux
 lost+found/
+
+# Env
+.env
