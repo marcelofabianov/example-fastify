@@ -1,0 +1,19 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+
+# Node.js
+node_modules/
+
+# Windows
+$RECYCLE.BIN/
+System Volume Information/
+
+# macOS
+*.DS_Store
+
+# Linux
+lost+found/

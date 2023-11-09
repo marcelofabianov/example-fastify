@@ -1,0 +1,20 @@
+{
+  "name": "mongo01",
+  "version": "1.0.0",
+  "description": "Exemplo de container docker com MongoDB.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.24.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0"
+  }
+}

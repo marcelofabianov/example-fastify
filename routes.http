@@ -1,0 +1,39 @@
+# FILEPATH: /home/marcelo/dev/mongodb/mongo01/routes.http
+# BASE_URL: http://localhost:3000
+
+# Criar um novo vídeo
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+    "title": "Meu vídeo",
+    "description": "Descrição do meu vídeo",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+}
+
+### Listar todos os vídeos
+
+GET http://localhost:3000/videos
+
+### Listar um vídeo específico 
+
+GET http://localhost:3000/videos/eb5e011d-f30c-404d-a2cc-4b30663d01a7
+
+### Atualizar um vídeo 
+
+PUT http://localhost:3000/videos/c8b89a52-f9c6-4bda-b8de-48802ee16758
+Content-Type: application/json
+
+{
+    "title": "Meu vídeo atualizado",
+    "description": "Descrição do meu vídeo atualizado",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+}
+
+### Deletar um vídeo
+
+DELETE http://localhost:3000/videos/5f9b0b5b9b0b3b1b9b0b3b1b
+
+### Inativar um vídeo
+
+PUT http://localhost:3000/videos/5f9b0b5b9b0b3b1b9b0b3b1b/inactivate
